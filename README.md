@@ -2,6 +2,27 @@
 
 A beautiful Flutter application that helps users track their environmental impact, participate in eco-friendly challenges, and build sustainable habits.
 
+## 📸 App Screenshots
+
+<p align="center">
+  <img src="screenshots/1.png" alt="screenshot 1" width="300"/>
+  <img src="screenshots/2.png" alt="screenshot 2" width="300"/>
+  <img src="screenshots/3.png" alt="screenshot 3" width="300"/>
+</p>
+<p align="center">
+  <img src="screenshots/4.png" alt="screenshot 4" width="300"/>
+  <img src="screenshots/5.png" alt="screenshot 5" width="300"/>
+  <img src="screenshots/6.png" alt="screenshot 6" width="300"/>
+</p>
+<p align="center">
+  <img src="screenshots/7.png" alt="screenshot 7" width="300"/>
+  <img src="screenshots/8.png" alt="screenshot 8" width="300"/>
+  <img src="screenshots/9.png" alt="screenshot 9" width="300"/>
+  <img src="screenshots/10.png" alt="screenshot 10" width="300"/>
+</p>
+
+---
+
 ## 📱 UI Design & Responsiveness
 
 ### Material Design 3 Implementation
