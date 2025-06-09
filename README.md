@@ -1,4 +1,4 @@
-# 🌿 Eco Footprint Tracker
+# 🌿 Carbon Footprint Tracker
 
 A beautiful Flutter application that helps users track their environmental impact, participate in eco-friendly challenges, and build sustainable habits.
 
