@@ -2,6 +2,14 @@
 
 A beautiful Flutter application that helps users track their environmental impact, participate in eco-friendly challenges, and build sustainable habits.
 
+--
+
+## 📹 Video Demo 
+
+https://www.loom.com/share/c6f72f3686fe467b8ae1763bfee3ea98?sid=8c60eb0d-991c-425b-9381-e8ef901a2356
+
+--
+
 ## 📸 App Screenshots
 
 <p align="center">
