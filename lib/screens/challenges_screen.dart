@@ -69,10 +69,13 @@ class _ChallengesScreenState extends State<ChallengesScreen> with SingleTickerPr
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.of(context).pop();
               // Update completed challenges in UserProvider
               Provider.of<UserProvider>(context, listen: false)
                   .addCompletedChallenge('No-Plastic Challenge');
+              // Reset the challenge after claiming the badge
+              Provider.of<ChallengesProvider>(context, listen: false)
+                  .resetChallenge();
+              Navigator.of(context).pop();
             },
             child: const Text('Claim Badge'),
           ),
@@ -147,32 +150,9 @@ class _ChallengesScreenState extends State<ChallengesScreen> with SingleTickerPr
                           ),
                           if (challengesProvider.isParticipating) ...[
                             const SizedBox(height: 24),
-                            LinearProgressIndicator(
-                              value: challengesProvider.progress,
-                              backgroundColor: Colors.grey[200],
-                              valueColor: AlwaysStoppedAnimation<Color>(
-                                Theme.of(context).colorScheme.primary,
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            Text(
-                              '${(challengesProvider.progress * 100).toInt()}% Complete',
-                              style: Theme.of(context).textTheme.bodyLarge,
-                            ),
                             Text(
                               challengesProvider.remainingDays,
                               style: Theme.of(context).textTheme.bodyMedium,
-                            ),
-                            const SizedBox(height: 16),
-                            ElevatedButton.icon(
-                              onPressed: () {
-                                challengesProvider.updateProgress();
-                                if (challengesProvider.progress >= 1.0) {
-                                  userProvider.addCompletedChallenge('No-Plastic Challenge');
-                                }
-                              },
-                              icon: const Icon(Icons.add),
-                              label: const Text('Log Progress'),
                             ),
                           ],
                         ],

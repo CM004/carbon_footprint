@@ -43,6 +43,14 @@ class ChallengesProvider with ChangeNotifier {
     notifyListeners();
   }
 
+  void resetChallenge() {
+    _isParticipating = false;
+    _progress = 0.0;
+    _challengeStartDate = null;
+    _hasBadge = false;
+    notifyListeners();
+  }
+
   String get remainingDays {
     if (!_isParticipating || _challengeStartDate == null) return '';
     final daysCompleted = (_progress * _totalDays).floor();

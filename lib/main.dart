@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
       ],
       child: Consumer<UserProvider>(
         builder: (context, userProvider, child) {
-          return MaterialApp(
+    return MaterialApp(
             title: 'Eco Footprint',
-            theme: ThemeData(
+      theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(
                 seedColor: Colors.green,
                 brightness: Brightness.light,
@@ -84,7 +84,7 @@ class _MainScreenState extends State<MainScreen> {
           _selectedIndex = 3;
         }
 
-        return Scaffold(
+    return Scaffold(
           body: IndexedStack(
             index: _selectedIndex,
             children: _screens,
@@ -121,9 +121,9 @@ class _MainScreenState extends State<MainScreen> {
               NavigationDestination(
                 icon: Icon(Icons.person),
                 label: 'Profile',
-              ),
-            ],
-          ),
+            ),
+          ],
+        ),
         );
       },
     );
